@@ -21,10 +21,38 @@
     --jade: #00a87c
 }
 
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+
+}
+
+header ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+header li {
+    height: 50px;
+    display: flex;
+    text-justify: center;
+    align-items: center; 
+}
+
+.headlogo {
+    height: 100px;
+    width: 100px;
+    float: left;
+    display: block;
+    padding-right: 100px;
+}
+
 /* Main Body */
 body {
-    margin: 10 px;
-    padding: 10 px;
+    margin: 10px;
+    padding: 10px;
 
 
     text-align: center;
@@ -120,7 +148,7 @@ footer a {
 
 .box {
 
-    background-color: #000000dd;
+    background-color: #0000008f;
     border: 2px solid #383838;
     border-radius: 4px;
     color: #fff;
@@ -128,6 +156,19 @@ footer a {
     margin: 5px;
 
 }
+
+/*Logo Formatting */
+#logocontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 200px;
+    width: 200px;
+    object-position: center;
+}
+
 
 /* Introduction.html*/
 
@@ -207,16 +248,16 @@ input[type=text] {
     padding: 8px;
     margin: 10px 0;
     box-sizing: border-box;
-    color:#fff;
+    color: #fff;
     border: 2px solid #383838;
     border-radius: 4px;
-    
+
 
 }
 
 input[type=number] {
     background-color: #383838;
-    width:auto;
+    width: auto;
     padding: 8px;
     margin: 10px 0;
     box-sizing: border-box;
@@ -266,14 +307,16 @@ ol li {
     padding: 10px;
     align-items: center;
 }
+
 #fizzbuzz-settings input[type=number] {
     width: 10%;
 }
+
 #fizzbuzz-settings input[type=text] {
     width: 25%;
 }
 
 #fizzbuzz-settings section {
-    display:flex;
-    
+    display: flex;
+
 }
