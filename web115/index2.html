@@ -12,6 +12,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <script src="/web115/scripts/main.js"></script>
+    <script src="/web115/scripts/scrollReveal.js"></script>
+    <script src="/web115/scripts/fizzbuzz0.js" defer></script>
+    <script src="/web115/scripts/fizzbuzz1.js" defer></script>
+    <script src="/web115/scripts/fizzbuzz2.js" defer></script>
+    <script src="/web115/scripts/fizzbuzz3.js" defer></script>
+    <script src="/web115/scripts/fizzbuzz4.js" defer></script>
+
     <title>David James' Dapper Jackal ※ Home</title>
 </head>
 
@@ -29,9 +37,9 @@
         <table>
             <tbody>
                 <tr>
-                    <td class="maintext">
+                    <td id="maintext" class="maintext">
                         <div class="box">
-                            <h2 id="welcomebox"class="boxtitle">🐺WELCOME!</h2>
+                            <h2 id="welcomebox" class="boxtitle">🐺WELCOME!</h2>
                             <p>Hey! This is the main page of my Github repo</p>
                             <a href="https://ddjamescpcc.github.io/web115">Click Here to go to WEB115</a>
                             <p>My name is David, </p>
@@ -215,67 +223,67 @@
                             </div>
                         </div>
                         <div class="box">
-                            <h2 id="fizzbuzz0box" class="boxtitle" id="welcome_message">🐺FIZZ BUZZ 0</h2>
-                            <form id="user_info_form">
-                                <label for="first_name">First Name:</label><br>
-                                <input type="text" id="first_name" name="first_name" required
+                            <h2 id="fizzbuzz0box" class="boxtitle">🐺FIZZ BUZZ 0</h2>
+                            <form id="fizzbuzz0-form">
+                                <label for="first_name0">First Name:</label><br>
+                                <input type="text" id="first_name0" name="first_name" required
                                     placeholder="Enter your First Name here"><br>
-                                <label for="middle_initial">Middle Initial:</label><br>
-                                <input type="text" id="middle_initial" name="middle_inital"
+                                <label for="middle_initial0">Middle Initial:</label><br>
+                                <input type="text" id="middle_initial0" name="middle_inatal"
                                     placeholder="Enter your Middle Initial here" maxlength="1"><br>
-                                <label for="last_name">Last Name:</label><br>
-                                <input type="text" id="last_name" name="last_name" required
+                                <label for="last_name0">Last Name:</label><br>
+                                <input type="text" id="last_name0" name="last_name" required
                                     placeholder="Enter your Last Name here"><br>
                                 <button type="submit" value="Submit">Submit</button>
                             </form>
                         </div>
                         <div class="box">
-                            <h2 id="fizzbuzz1box" class="boxtitle" id="welcome_message">🐺FIZZ BUZZ 1</h2>
-                            <form id="user_info_form">
-                                <label for="first_name">First Name:</label><br>
-                                <input type="text" id="first_name" name="first_name" required
+                            <h2 id="fizzbuzz1box" class="boxtitle">🐺FIZZ BUZZ 1</h2>
+                            <form id="fizzbuzz1-form">
+                                <label for="first_name1">First Name:</label><br>
+                                <input type="text" id="first_name1" name="first_name" required
                                     placeholder="Enter your First Name here"><br>
-                                <label for="middle_initial">Middle Initial:</label><br>
-                                <input type="text" id="middle_initial" name="middle_inital"
+                                <label for="middle_initial1">Middle Initial:</label><br>
+                                <input type="text" id="middle_initial1" name="middle_inatal"
                                     placeholder="Enter your Middle Initial here" maxlength="1"><br>
-                                <label for="last_name">Last Name:</label><br>
-                                <input type="text" id="last_name" name="last_name" required
+                                <label for="last_name1">Last Name:</label><br>
+                                <input type="text" id="last_name1" name="last_name" required
                                     placeholder="Enter your Last Name here"><br>
                                 <button type="submit" value="Submit">Submit</button>
                             </form>
                         </div>
                         <div class="box">
-                            <h2 id="fizzbuzz2box" class="boxtitle" id="welcome_message">🐺FIZZ BUZZ 2</h2>
-                            <form id="user_info_form">
-                                <label for="first_name">First Name:</label><br>
-                                <input type="text" id="first_name" name="first_name" required
+                            <h2 id="fizzbuzz2box" class="boxtitle">🐺FIZZ BUZZ 2</h2>
+                            <form id="fizzbuzz2-form">
+                                <label for="first_name2">First Name:</label><br>
+                                <input type="text" id="first_name2" name="first_name" required
                                     placeholder="Enter your First Name here"><br>
-                                <label for="middle_initial">Middle Initial:</label><br>
-                                <input type="text" id="middle_initial" name="middle_inital"
+                                <label for="middle_initial2">Middle Initial:</label><br>
+                                <input type="text" id="middle_initial2" name="middle_inatal"
                                     placeholder="Enter your Middle Initial here" maxlength="1"><br>
-                                <label for="last_name">Last Name:</label><br>
-                                <input type="text" id="last_name" name="last_name" required
+                                <label for="last_name2">Last Name:</label><br>
+                                <input type="text" id="last_name2" name="last_name" required
                                     placeholder="Enter your Last Name here"><br>
                                 <button type="submit" value="Submit">Submit</button>
                             </form>
                         </div>
                         <div class="box">
-                            <h2 id="fizzbuzz3box" class="boxtitle" id="welcome_message">🐺FIZZ BUZZ 3</h2>
-                            <form id="user_info_form">
-                                <label for="first_name">First Name:</label><br>
-                                <input type="text" id="first_name" name="first_name" required
+                            <h2 id="fizzbuzz3box" class="boxtitle">🐺FIZZ BUZZ 3</h2>
+                            <form id="fizzbuzz3-form">
+                                <label for="first_name3">First Name:</label><br>
+                                <input type="text" id="first_name3" name="first_name" required
                                     placeholder="Enter your First Name here"><br>
-                                <label for="middle_initial">Middle Initial:</label><br>
-                                <input type="text" id="middle_initial" name="middle_inital"
+                                <label for="middle_initial3">Middle Initial:</label><br>
+                                <input type="text" id="middle_initial3" name="middle_inatal"
                                     placeholder="Enter your Middle Initial here" maxlength="1"><br>
-                                <label for="last_name">Last Name:</label><br>
-                                <input type="text" id="last_name" name="last_name" required
+                                <label for="last_name3">Last Name:</label><br>
+                                <input type="text" id="last_name3" name="last_name" required
                                     placeholder="Enter your Last Name here"><br>
                                 <button type="submit" value="Submit">Submit</button>
                             </form>
                         </div>
                         <div class="box">
-                            <h2 id="fizzbuzz4box" class="boxtitle" id="welcome-message">🐺FIZZ BUZZ 4</h2>
+                            <h2 id="fizzbuzz4box" class="boxtitle">🐺FIZZ BUZZ 4</h2>
                             <p><strong>INSTRUCTIONS:</strong>Please enter your name and choose three numbers FizzBuzz
                                 will use
                                 to divide by. For each number enter a number that will be used when the number is
@@ -285,17 +293,17 @@
                                 total count to use. Default = 125</p>
                         </div>
                         <div class="box">
-                            <form id="fizzbuzz-form">
+                            <form id="fizzbuzz4-form">
                                 <fieldset id="user-info-field">
                                     <legend>User Info</legend>
-                                    <label for="first_name">First Name:</label><br>
-                                    <input type="text" id="first-name" name="first-name" required
+                                    <label for="first_name4">First Name:</label><br>
+                                    <input type="text" id="first-name4" name="first-name" required
                                         placeholder="Enter your First Name here"><br>
-                                    <label for="middle-initial">Middle Initial:</label><br>
-                                    <input type="text" id="middle-initial" name="middle-inital"
+                                    <label for="middle-initial4">Middle Initial:</label><br>
+                                    <input type="text" id="middle-initial4" name="middle-inatal"
                                         placeholder="Enter your Middle Initial here" maxlength="1"><br>
-                                    <label for="last_name">Last Name:</label><br>
-                                    <input type="text" id="last-name" name="last-name" required
+                                    <label for="last_name4">Last Name:</label><br>
+                                    <input type="text" id="last-name4" name="last-name" required
                                         placeholder="Enter your Last Name here"><br>
                                 </fieldset>
                                 <fieldset id="fizzbuzz-settings">
@@ -572,7 +580,6 @@
                     <td class="mainmenu">
                         <div class="box">
                             <h2 class="boxtitle">🐺QUICK LINKS</h2>
-                            <script src="/web115/scripts/main.js"></script>
                             <div w3-include-html="/web115/navigation2.html"></div>
                             <script>includeHTML();</script>
                         </div>
@@ -582,11 +589,9 @@
         </table>
     </main>
     <footer>
-        <script src="/web115/scripts/main.js"></script>
         <div w3-include-html="/web115/footer-template.html"></div>
         <script>includeHTML();</script>
     </footer>
-    <script src="/web115/scripts/scrollReveal.js" defer></script>
 </body>
 
 </html>

@@ -1,11 +1,11 @@
-document.getElementById("fizzbuzz-form").addEventListener('submit', function (event) {
+document.getElementById("fizzbuzz4-form").addEventListener('submit', function (event) {
     const main = document.getElementById('maintext');
     const newBox = document.createElement("div");
     const list = document.createElement("ol");
     
     newBox.classList.add("box");
-    newBox.id = "fizzbuzz_list";
-    list.id = "data";
+    newBox.id = "fizzbuzz4_list";
+    list.id = "data4";
     
     main.appendChild(newBox);
     newBox.appendChild(list);
@@ -19,14 +19,14 @@ function checkDivsible(dividend, divisor) {
     return divisable;
 }
 
-document.getElementById("fizzbuzz-form").addEventListener('submit', function (event) {
+document.getElementById("fizzbuzz4-form").addEventListener('submit', function (event) {
     
     /* Stops the form from taking it's default action (submitting and refreshing the page) */
     event.preventDefault();
     
-    const first_name = document.getElementById('first-name').value.trim();
-    const middle_initial = document.getElementById("middle-initial").value.trim();
-    const last_name = document.getElementById("last-name").value.trim();
+    const first_name = document.getElementById('first-name4').value.trim();
+    const middle_initial = document.getElementById("middle-initial4").value.trim();
+    const last_name = document.getElementById("last-name4").value.trim();
     const count = document.getElementById("total-count").value.trim();
     const first_divisor = document.getElementById("first-num").value.trim();
     const second_divisor = document.getElementById("second-num").value.trim();
@@ -42,9 +42,9 @@ document.getElementById("fizzbuzz-form").addEventListener('submit', function (ev
     }
     full_name += ` ${last_name}`;
     
-    document.getElementById("welcome-message").innerHTML = `🐺WELCOME TO JACKAL GAMING, ${full_name}`;
+    document.getElementById("fizzbuzz4box").innerHTML = `🐺WELCOME TO JACKAL GAMING, ${full_name}`;
 
-    var text = document.getElementById("data");
+    var text = document.getElementById("data4");
     
     for (let i = 1; i <= count; i++) {
         var entries = document.createElement("li");
