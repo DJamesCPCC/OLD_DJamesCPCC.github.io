@@ -38,7 +38,7 @@ header li {
     height: 50px;
     display: flex;
     text-justify: center;
-    align-items: center; 
+    align-items: center;
 }
 
 .headlogo {
@@ -46,7 +46,7 @@ header li {
     width: 100px;
     float: left;
     display: block;
-    padding-right: 100px;
+    padding-right: 50px;
 }
 
 /* Main Body */
@@ -109,12 +109,22 @@ main a:active {
     color: beige;
 }
 
+nav {
+    position: sticky;
+}
+
 main a nav {
     display: block;
 }
 
 td {
     vertical-align: top;
+}
+
+.mainmenu .box {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 footer {
@@ -243,6 +253,19 @@ pre {
 
 /* Forms */
 input[type=text] {
+    background-color: #383838;
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    color: #fff;
+    border: 2px solid #383838;
+    border-radius: 4px;
+
+
+}
+
+textarea {
     background-color: #383838;
     width: 100%;
     padding: 8px;

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the default stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../styles/default.css">
+
+    <!-- Preconnect to Google Fonts for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon for the page -->
+    <link rel="icon" type="image/x-icon" href="web115\images\jackal-logos\Jackal Logos-cropped (5).svg">
+
+    <!-- Importing fonts from Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anta&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- JavaScript files for functionality -->
+    <script src="/web115/scripts/main.js"></script>
+    <script type="text/javascript" src="/web115/scripts/introform.js" defer></script>
+
+    <title>David James' Dapper Jackal ※ Introduction Form</title>
+</head>
+
+<body>
+    <header>
+        <!-- Page header with title -->
+        <h1 class="headtitle">Jackal Gaming ※ Introduction Form</h1>
+    </header>
+    <main>
+        <table>
+            <tbody>
+                <tr>
+                    <td id="maintext" class="maintext">
+                        <div class="box">
+                            <!-- Welcome message for the form -->
+                            <h2 class="boxtitle" id="welcome-message">🐺INTRODUCTION FORM</h2>
+                        </div>
+                        <form id="intro-form">
+                            <div class="box">
+                                <!-- Section for personal information -->
+                                <h2 class="boxtitle">🐺PERSONAL INFORMATION</h2>
+                                <fieldset id="greeting-field">
+                                    <legend>Greeting</legend>
+                                    <input type="text" id="greeting" name="greeting" value="Hey," required>
+                                </fieldset>
+                                <fieldset id="bio-field">
+                                    <legend>Bio</legend>
+                                    <textarea id="biography" name="biography" required>My name is David.I am in my second-to-last semester at CPCC, working towards an IT - App. Dev & Data Analysis
+                                        degree. I love collecting vinyl records and playing video games with my friends. Programming has always been a passion
+                                        of mine since I was a kid, and I hope to be able to do it for the rest of my life. To me, programming is a art form just
+                                        like painting or poetry; the best programmers can create unique solutions to problems, either using existing tools or
+                                        creating new ones from scratch.</textarea>
+                                </fieldset>
+                                <fieldset id="image-field">
+                                    <legend>Image</legend>
+                                    <input type="file" id="intropicture" name="intropicture" accept="image/*">
+                                </fieldset>
+                                <fieldset id="image-caption-field">
+                                    <legend>Image Caption</legend>
+                                    <textarea id="imgcaption" name="imgcaption"
+                                        required>My friends and I before going Uptown, 2025</textarea>
+                                </fieldset>
+                                <fieldset id="personal-field">
+                                    <legend>Personal Background</legend>
+                                    <textarea id="personalbackground" name="personalbackground"
+                                        required>I am 23 years old, and I was born and raised in Charlotte</textarea>
+
+                                </fieldset>
+                                <fieldset id="professional-field">
+                                    <legend>Professional Background</legend>
+                                    <textarea id="professionalbackground" name="professionalbackground"
+                                        required>Until, recently, I worked either full or part time at different Chipotles</textarea>
+
+                                </fieldset>
+                                <fieldset id="academic-field">
+                                    <legend>Academic Background</legend>
+                                    <textarea id="academicbackground" name="academicbackground" required>I started my college career at East Carolina University in their computer science program before coming back to
+                                        Charlotte and enrolling in CPCC.</textarea>
+
+                                </fieldset>
+                                <fieldset id="computer-field">
+                                    <legend>Computer Information</legend>
+                                    <textarea id="primarycomputer" name="primarycomputer" required>HP Desktop running Windows and Arch Linux via Virtual Machine. I primarily work at my desk, but I also have a MacBook
+                                        Air in case I want to work on the go.</textarea>
+
+                                </fieldset>
+                            </div>
+
+                            <div class="box">
+                                <!-- Section for course information -->
+                                <h2 class="boxtitle">🐺COURSE INFORMATION</h2>
+                                <fieldset id="course-field">
+                                    <legend>Courses</legend>
+                                    <label for="course0">Course:</label><br>
+                                    <input type="text" id="course" name="course" required
+                                        value="WEB115 - Web Markup and Scripting"><br>
+                                    <label for="reason0">Reason:</label><br>
+                                    <textarea name="reason"
+                                        id="reason0">Required for my degree, I think it's fun to code websites</textarea>
+                                    <button id="addcoursebutton" type="button">Add Course</button>
+
+                                </fieldset>
+                            </div>
+
+                            <div class="box">
+                                <!-- Section for additional information -->
+                                <h2 class="boxtitle">🐺EXTRA INFO</h2>
+                                <fieldset id="famous-quote-field">
+                                    <legend>Thing to Remember Me by</legend>
+                                    <textarea id="famousquote" name="famousquote">"You don't have to be a man to fight for freedom. All you have to do is to be an intelligent human being"
+                                        - Malcolm X</textarea>
+                                </fieldset>
+                                <fieldset id="additional-field">
+                                    <legend>I'd Also Like to Share</legend>
+                                    <textarea id="extrainfo" name="extrainfo"></textarea>
+                                </fieldset>
+                                <button type="submit" value="Submit">Submit</button>
+                        </form>
+                        </div>
+                    </td>
+                    <td class="mainmenu">
+                        <div class="box">
+                            <!-- Quick links section -->
+                            <h2 class="boxtitle">🐺QUICK LINKS</h2>
+                            <div w3-include-html="/web115/navigation.html"></div>
+                            <script>includeHTML();</script>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <!-- Footer content -->
+        <div w3-include-html="/web115/footer-template.html"></div>
+        <script>includeHTML();</script>
+    </footer>
+</body>
+
+</html>
